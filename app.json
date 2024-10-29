@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "YomoniTestApp",
-    "slug": "YomoniTestApp",
+    "slug": "yomoniapptest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -31,6 +31,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "31e4e8a5-0ef7-49d0-9d4b-be8030c92443"
+      }
+    },
+    "owner": "djeblack"
   }
 }

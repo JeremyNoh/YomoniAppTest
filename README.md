@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# 🎮 PokéSearch App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center">
+  <img src="/api/placeholder/800/400" alt="PokéSearch Banner"/>
 
-## Get started
+  Une application moderne et responsive pour explorer l'univers Pokémon, développée avec Expo et React Native.
 
-1. Install dependencies
+  [![Made with Expo](https://img.shields.io/badge/Made%20with-Expo-blue.svg)](https://expo.dev/)
+  [![Runs with iOS](https://img.shields.io/badge/Runs%20with-iOS-white.svg?logo=apple)]()
+  [![Runs with Android](https://img.shields.io/badge/Runs%20with-Android-green.svg?logo=android)]()
+  [![Runs on Web](https://img.shields.io/badge/Runs%20on-Web-orange.svg?logo=google-chrome)]()
+</div>
 
-   ```bash
-   npm install
-   ```
+## 📱 Aperçu
 
-2. Start the app
+### Version Mobile
+<div style="display: flex; gap: 20px;">
+  <img src="screenshot/search-mobile.png" alt="Search Screen Mobile" width="200"/>
+  <img src="screenshot/detail-mobile.png" alt="Detail Screen Mobile" width="200"/>
+</div>
 
-   ```bash
-    npx expo start
-   ```
+### Version Web
+<div style="display: flex; gap: 20px;">
+  <img src="screenshot/search-web.png" alt="Search Screen Web" width="400"/>
+  <img src="screenshot/detail-web.png" alt="Detail Screen Web" width="400"/>
+</div>
 
-In the output, you'll find options to open the app in a
+## 🚀 À propos du projet
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+cette application cross-platform  permet aux utilisateurs d'explorer l'univers Pokémon. Développée avec Expo et React Native, elle offre une expérience utilisateur fluide et responsive sur iOS, Android et Web.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Fonctionnalités principales
 
-## Get a fresh project
+- 🔍 Recherche de Pokémon
+- 📱 Interface responsive adaptée à tous les écrans
+- 📊 Affichage détaillé des statistiques
+- ⚡ Performance optimisée
 
-When you're ready, run:
+## 🏗 Architecture
 
-```bash
-npm run reset-project
+### Atomic Design
+L'application suit les principes de l'Atomic Design pour une architecture modulaire et maintenable :
+
+```
+src/
+├── components/
+│   ├── atoms/         # Composants de base (Input, PokemonImage)
+│   ├── molecules/     # Combinaisons d'atoms (PokemonCard)
+│   └── organisms/     # Structures complexes (PokemonList)
+├── screens/           # Écrans de l'application
+└── api/              # Logique d'API
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Gestion des données
 
-## Learn more
+- **TanStack Query** pour une gestion efficace des requêtes API
+- Cache optimisé pour une meilleure performance
+- Gestion d'état centralisée
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🛠 Technologies utilisées
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **Framework**: Expo / React Native
+- **État & Cache**: TanStack Query
+- **Navigation**: React Navigation
+- **API**: PokeAPI
+- **Type safety**: TypeScript
 
-## Join the community
+## 🔜 Améliorations futures
 
-Join our community of developers creating universal apps.
+- [ ] Pagination des résultats (actuellement limité à 100 Pokémon)
+- [ ] Filtres avancés (type, génération, etc.)
+- [ ] Mode hors ligne avec AsyncStorage
+- [ ] Animations d'interface utilisateur
+- [ ] Thème sombre/clair
+- [ ] Favoris personnalisés
+- [ ] Comparaison de Pokémon
+- [ ] Statistiques avancées et graphiques
+- [ ] Tests unitaires et d'intégration
+- [ ] Localisation (multi-langue)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🚀 Installation
+
+1. Cloner le repository
+```bash
+git https://github.com/JeremyNoh/YomoniAppTest
+```
+
+2. Installer les dépendances
+```bash
+cd YomoniAppTest
+npm install
+```
+
+3. Lancer l'application
+```bash
+npm start
+```
+
+## 📱 Plateformes supportées
+
+- ✅ iOS
+- ✅ Android
+- ✅ Web
+
+
+## 📝 Licence
+
+Ce projet est sous licence MIT.
